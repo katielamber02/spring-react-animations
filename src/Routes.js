@@ -7,6 +7,7 @@ import {
   __RouterContext
 } from "react-router-dom";
 import { animated, useTransition } from "react-spring";
+import { ModalWrapper } from "./Modal";
 
 function useRouter() {
   return useContext(__RouterContext);
@@ -61,7 +62,10 @@ function NavLink(props) {
 const One = () => {
   return (
     <div className="page-route">
-      <h1>One</h1>
+      <h1>
+        One
+        <ModalWrapper />
+      </h1>
     </div>
   );
 };
