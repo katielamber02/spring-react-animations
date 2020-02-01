@@ -42,6 +42,7 @@ import { useSpring, animated } from "react-spring";
 import { Toggle } from "./Toggle";
 import { Nav } from "./Nav";
 import { Checkout } from "./Checkout";
+import { Routes } from "./Routes";
 
 const App = () => {
   const [isNavOpen, setNavOpen] = useState(false);
@@ -66,7 +67,8 @@ const App = () => {
         {/* <Nav style={navAnimation} /> */}
       </header>
       <main>
-        <Toggle />
+        {/* <Toggle /> */}
+        <Routes />
       </main>
       <Checkout isOpen={isNavOpen} />
     </animated.div>
